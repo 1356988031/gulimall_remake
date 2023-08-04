@@ -10,24 +10,28 @@ import java.util.Map;
 /**
  * 商品三级分类
  *
- * @author wushubin
- * @email 1356988031@qq.com
- * @date 2022-09-29 09:09:38
+ * @author leifengyang
+ * @email leifengyang@gmail.com
+ * @date 2019-10-01 21:08:48
  */
 public interface CategoryService extends IService<CategoryEntity> {
 
     PageUtils queryPage(Map<String, Object> params);
 
-    /**
-     * 利用递归查询 查询每个父子分类菜单
-     * @return
-     */
     List<CategoryEntity> listWithTree();
 
-    /**
-     * 删除当前分类，如果存在子分类则不能删除
-     * @param asList
-     */
     void removeMenuByIds(List<Long> asList);
+
+
+    /**
+     * 找到catelogId的完整路径；
+     * [父/子/孙]
+     * @param catelogId
+     * @return
+     */
+    Long[] findCatelogPath(Long catelogId);
+
+    void updateCascade(CategoryEntity category);
+
 }
 

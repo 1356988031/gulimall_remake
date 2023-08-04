@@ -20,9 +20,9 @@ import com.atguigu.common.utils.R;
 /**
  * 秒杀活动场次
  *
- * @author wushubin
- * @email 1356988031@qq.com
- * @date 2022-09-27 12:38:05
+ * @author leifengyang
+ * @email leifengyang@gmail.com
+ * @date 2019-10-08 09:36:40
  */
 @RestController
 @RequestMapping("coupon/seckillsession")

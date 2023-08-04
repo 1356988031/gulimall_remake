@@ -7,9 +7,9 @@ import org.apache.ibatis.annotations.Mapper;
 /**
  * 商品会员价格
  * 
- * @author wushubin
- * @email 1356988031@qq.com
- * @date 2022-09-27 12:38:05
+ * @author leifengyang
+ * @email leifengyang@gmail.com
+ * @date 2019-10-08 09:36:40
  */
 @Mapper
 public interface MemberPriceDao extends BaseMapper<MemberPriceEntity> {

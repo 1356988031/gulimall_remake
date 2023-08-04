@@ -7,9 +7,9 @@ import org.apache.ibatis.annotations.Mapper;
 /**
  * 采购信息
  * 
- * @author wushubin
- * @email 1356988031@qq.com
- * @date 2022-09-27 12:45:06
+ * @author leifengyang
+ * @email leifengyang@gmail.com
+ * @date 2019-11-17 13:50:10
  */
 @Mapper
 public interface PurchaseDao extends BaseMapper<PurchaseEntity> {
